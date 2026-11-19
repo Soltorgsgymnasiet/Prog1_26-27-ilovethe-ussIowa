@@ -1,4 +1,6 @@
-﻿/// <summary>
+﻿using System.Numerics;
+
+/// <summary>
 /// Returns a string with a single character replaced at the given position.
 /// <param name="text">String to be modified.</param>
 /// <param name="position">The index where the character will be replaced.</param>
@@ -22,4 +24,43 @@ static string ReplaceCharInString(string text, int position, char letter)
 ///Repetera tills användaren har gissat ordet korrekt eller fått slut på liv.
 ///
 
-//hej
+//----------------------------------------------------------------------------------------------------------------------
+
+
+
+string tries;
+string total_guesses;
+
+//---
+
+Console.WriteLine("Hangman Game");
+System.Console.Write("Choose a word and write it");
+string chooseword = null;
+while (true)
+{
+    var guess = System.Console.ReadKey(true);
+    if (key.key == ConsoleKey.Enter) ;
+    break;
+    chooseword += word.keyChar;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
