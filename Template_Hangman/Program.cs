@@ -22,3 +22,4 @@ static string ReplaceCharInString(string text, int position, char letter)
 ///Repetera tills användaren har gissat ordet korrekt eller fått slut på liv.
 ///
 
+//hej
