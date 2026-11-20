@@ -26,25 +26,43 @@ static string ReplaceCharInString(string text, int position, char letter)
 
 //----------------------------------------------------------------------------------------------------------------------
 
-
-
-string tries;
-string total_guesses;
-
+int max_guesses = 15;
+int z = 0;
 //---
 
-Console.WriteLine("Hangman Game");
-System.Console.Write("Choose a word and write it");
-string chooseword = null;
-while (true)
+
+
+    Console.WriteLine("Hangman Game");
+    System.Console.Write("Choose a word and write it: ");
+    string word = Console.ReadLine();
+    Console.Clear();
+
+
+
+    Console.WriteLine($"Guess letters for the word, tries left: {max_guesses} ");
+while (z < max_guesses)
 {
-    var guess = System.Console.ReadKey(true);
-    if (key.key == ConsoleKey.Enter) ;
-    break;
-    chooseword += word.keyChar;
+
+    string input = Console.ReadLine();
 
 
 
+    if (input != word)
+    {
+        max_guesses -= 1;
+        Console.WriteLine($"Lettter not in use, Tries left: {max_guesses} ");
+
+
+
+
+    }
+
+
+}
+if (z == max_guesses)
+{
+    Console.Clear();
+    Console.WriteLine($"No more tries, the word was: {word} ");
 
 
 
